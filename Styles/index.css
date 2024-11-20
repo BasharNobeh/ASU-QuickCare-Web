@@ -1,0 +1,45 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML must fill the viewport */
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout container */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+}
+
+/* Header styling */
+.header-frame {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensure it stays above the content */
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* Takes up all available space between header and footer */
+    padding: 20px;
+    overflow: auto; /* Allows scrolling if content overflows */
+    background-color: #f9f9f9;
+}
+
+/* Footer styling */
+.footer-frame {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    border: none;
+}
